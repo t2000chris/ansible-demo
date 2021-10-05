@@ -6,8 +6,8 @@
 
   tasks:
     - name: Getting all processes
-      ansible.builtin.shell: ls
+      ansible.builtin.ping:
     - name: Find related processes
-      ansible.builtin.shell: ls
+      ansible.builtin.ping:
     - name: Kill application processes
-      ansible.builtin.shell: ls
+      ansible.builtin.ping:
