@@ -5,7 +5,7 @@
   gather_facts: false
 
   tasks:
-    - name: Getting all processes
+    - name: Getting all test processes
       ansible.builtin.ping:
     - name: Find related processes
       ansible.builtin.ping:
