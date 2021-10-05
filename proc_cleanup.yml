@@ -1,0 +1,13 @@
+---
+- name: process cleanup
+  hosts: "{{ HOSTS | default('web') }}"
+  become: true
+  gather_facts: false
+
+  tasks:
+    - name: Getting all processes
+      ansible.builtin.shell: ls
+    - name: Find related processes
+      ansible.builtin.shell: ls
+    - name: Kill application processes
+      ansible.builtin.shell: ls
